@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="ETO" value="20"/>
+    <parameter name="ITO" value="20"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="un" value="nameishemanth@rediffmail.com"/>
+    <parameter name="appUrl" value="http://automationpractice.com/index.php"/>
+    <parameter name="pwd" value="Testing@123"/>
+    <classes>
+      <class name="tests.TC001">
+        <methods>
+          <include name="logoutFromApp"/>
+          <include name="launchApp"/>
+          <include name="loginToApp"/>
+          <include name="validLogin"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- tests.TC001 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
